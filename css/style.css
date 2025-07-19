@@ -7,15 +7,13 @@ body {
 
 /* Navbar */
 .navbar {
-  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
+  background-color: rgba(0, 0, 0, 0.5);
 }
-
 .navbar-brand {
   font-weight: bold;
   font-size: 1.5rem;
   color: white !important;
 }
-
 .navbar .nav-link:hover {
   color: #00d9ff !important;
   transition: color 0.3s ease;
@@ -26,37 +24,33 @@ body {
   position: relative;
   overflow: hidden;
 }
-
 .carousel-item img {
-  height: 70vh;               /* Reduced height for desktop */
+  height: 70vh;
   width: 100%;
   object-fit: cover;
+  object-position: center;
 }
-
 .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
   border-radius: 10px;
 }
 
-/* Hero Section (if used separately) */
+/* Hero Section */
 .hero-section {
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   color: white;
   padding: 140px 20px 100px;
   text-align: center;
 }
-
 .hero-section h1 {
   font-size: 3rem;
   font-weight: 700;
 }
-
 .hero-section p {
   font-size: 1.25rem;
   margin-bottom: 30px;
 }
-
 .btn-primary {
   padding: 12px 25px;
   font-size: 1rem;
@@ -68,20 +62,17 @@ body {
   background-color: #f8f9fa;
   padding: 3rem 0;
 }
-
 .event-card {
   aspect-ratio: 1 / 1;
   height: 100%;
   cursor: pointer;
   position: relative;
 }
-
 .event-card img {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
-
 .event-card .overlay {
   position: absolute;
   top: 0;
@@ -97,7 +88,6 @@ body {
   justify-content: center;
   text-align: center;
 }
-
 .event-card:hover .overlay {
   opacity: 1;
 }
@@ -108,23 +98,19 @@ body {
   color: #fff;
   padding: 80px 20px;
 }
-
 .contact-section h2 {
   font-size: 2rem;
   margin-bottom: 20px;
 }
-
 .contact-section p {
   font-size: 1rem;
   margin: 0;
 }
-
 .social-icons a {
   font-size: 1.25rem;
   color: #fff;
   transition: color 0.3s ease;
 }
-
 .social-icons a:hover {
   color: #00d9ff;
 }
@@ -134,21 +120,31 @@ body {
    ============================= */
 @media (max-width: 768px) {
   .carousel-item img {
-    height: 55vh; /* Shrink image height for small screens */
+    height: 50vh;
   }
 
   .carousel-caption {
     padding: 10px;
     font-size: 0.9rem;
     border-radius: 6px;
-    background-color: rgba(0, 0, 0, 0.4); /* Less opaque for mobile */
+    background-color: rgba(0, 0, 0, 0.35);
   }
 
   .carousel-caption h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    line-height: 1.2;
   }
 
   .carousel-caption p {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.3;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .nav-link {
+    font-size: 0.95rem;
   }
 }
