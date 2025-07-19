@@ -28,11 +28,13 @@ body {
 }
 
 .carousel-item img {
-  height: 70vh;               /* Reduced height for desktop */
   width: 100%;
-  object-fit: contain;        /* Show full image without cropping */
+  max-height: 100vh;
+  object-fit: contain;
   object-position: center;
-  background-color: #000;     /* Black bars if image doesn't fill container */
+  background-color: #000;
+  display: block;
+  margin: 0 auto;
 }
 
 .carousel-caption {
@@ -136,7 +138,8 @@ body {
    ============================= */
 @media (max-width: 768px) {
   .carousel-item img {
-    height: 50vh;
+    height: auto;
+    max-height: 60vh;
     object-fit: contain;
   }
 
@@ -144,7 +147,7 @@ body {
     padding: 10px;
     font-size: 0.9rem;
     border-radius: 6px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .carousel-caption h1 {
